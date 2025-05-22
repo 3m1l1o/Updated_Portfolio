@@ -241,7 +241,7 @@ const Portfolio = () => {
     {
       id: 1,
       title: "Happy Kisan App",
-      image: "happy_kisan.png",
+      image: "",
       liveLink: "https://play.google.com/store/apps/details?id=com.happykisan",
       githubLink: "https://github.com/Engglala243/happy_kisan",
       description:
@@ -538,7 +538,7 @@ const Portfolio = () => {
                   className="home__blob-img"
                   x="50"
                   y="60"
-                  href="/image.png"
+                  href="./src/assets/images/sccocoGuitar.jpeg"
                 />
               </g>
             </svg>
@@ -558,7 +558,7 @@ const Portfolio = () => {
               data-aos-delay="200"
             >
               <img
-                src="/image.png"
+                src="./src/assets/images/AresSpanelBretton.jpeg"
                 alt="image.png"
                 className="about__portrait"
               />
@@ -710,7 +710,7 @@ const Portfolio = () => {
               >
                 <div className="work__img-container">
                   <img
-                    src={project.image || "/placeholder.svg"}
+                    src={"./src/assets/images/AresSpanelBretton.jpeg"}
                     alt={project.title}
                     className="work__img"
                   />
