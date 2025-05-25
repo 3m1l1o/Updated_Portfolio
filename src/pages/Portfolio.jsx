@@ -417,7 +417,7 @@ const Portfolio = () => {
                 scrollToSection("home");
               }}
             >
-              <span className="nav__logo-text">Aditya</span>
+              <span className="nav__logo-text">Emilio Gallo</span>
               <span className="nav__logo-dot"></span>
             </a>
           </div>
@@ -471,7 +471,7 @@ const Portfolio = () => {
             <h1 className="home__title">
               Hi,
               <br />
-              I'm <span className="home__title-color">Aditya Patidar</span>
+              I'm <></><span className="home__title-color">Emilio Gallo</span>
               <br /> <span className="typewriter">Full Stack Developer</span>
             </h1>
             <p
@@ -523,7 +523,7 @@ const Portfolio = () => {
           <div className="home__img">
             <svg
               className="home__blob"
-              viewBox="0 0 479 467"
+              viewBox="0 0 450 450"
               xmlns="http://www.w3.org/2000/svg"
             >
               <mask id="mask0" mask-type="alpha">
@@ -536,9 +536,9 @@ const Portfolio = () => {
                 />
                 <image
                   className="home__blob-img"
-                  x="50"
-                  y="60"
-                  href="./src/assets/images/sccocoGuitar.jpeg"
+                  x="90"
+                  y="90"
+                  href="./src/assets/images/AresSpanelBretton.jpeg"
                 />
               </g>
             </svg>

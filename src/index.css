@@ -13,11 +13,11 @@
   --font-semi: 600;
 
   /*===== Colors =====*/
-  --hue-color: 230;
+  --hue-color: 88;
   --first-color: hsl(var(--hue-color), 80%, 55%);
   --first-color-alt: hsl(var(--hue-color), 80%, 45%);
   --second-color: hsl(var(--hue-color), 30%, 15%);
-  --title-color: hsl(var(--hue-color), 30%, 15%);
+  --title-color: hsl(var(--hue-color), 33%, 33%);
   --text-color: hsl(var(--hue-color), 15%, 35%);
   --body-color: #fff;
   --container-color: #fff;
@@ -321,7 +321,7 @@ img {
   overflow: hidden;
   background: linear-gradient(180deg,
       rgba(var(--first-color-rgb), 0.05) 0%,
-      rgba(255, 255, 255, 0) 100%);
+      rgba(189, 40, 40, 0) 100%);
 }
 
 .home__data {
@@ -337,15 +337,12 @@ img {
 }
 
 .home__title-color {
-  background: linear-gradient(135deg,
-      var(--first-color) 0%,
-      var(--first-color-alt) 100%);
+  background-color: var(--title-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  
 }
 
 .home__description {
