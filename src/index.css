@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-@import url("https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css");
+
 
 /* Update the color scheme with a more modern palette */
 :root {
@@ -11,11 +13,11 @@
   --font-semi: 600;
 
   /*===== Colors =====*/
-  --hue-color: 230;
+  --hue-color: 88;
   --first-color: hsl(var(--hue-color), 80%, 55%);
   --first-color-alt: hsl(var(--hue-color), 80%, 45%);
   --second-color: hsl(var(--hue-color), 30%, 15%);
-  --title-color: hsl(var(--hue-color), 30%, 15%);
+  --title-color: hsl(var(--hue-color), 33%, 33%);
   --text-color: hsl(var(--hue-color), 15%, 35%);
   --body-color: #fff;
   --container-color: #fff;
@@ -141,11 +143,9 @@ img {
   right: 0;
   margin: auto;
   top: 2.8rem;
-  background: linear-gradient(
-    90deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(90deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
 }
 
 .section-subtitle {
@@ -209,11 +209,13 @@ img {
   font-weight: 700;
   font-size: 1.6rem;
   letter-spacing: 0.5px;
-  background: linear-gradient(
-    135deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease;
@@ -222,11 +224,9 @@ img {
 .nav__logo-dot {
   width: 8px;
   height: 8px;
-  background: linear-gradient(
-    135deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
   border-radius: 50%;
   margin-left: 2px;
   display: inline-block;
@@ -260,11 +260,9 @@ img {
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(
-    90deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(90deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
   border-radius: 3px;
   animation: fadeIn 0.3s ease;
 }
@@ -321,11 +319,9 @@ img {
   row-gap: 5rem;
   padding: 6rem 0 0;
   overflow: hidden;
-  background: linear-gradient(
-    180deg,
-    rgba(var(--first-color-rgb), 0.05) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(var(--first-color-rgb), 0.05) 0%,
+      rgba(189, 40, 40, 0) 100%);
 }
 
 .home__data {
@@ -341,13 +337,12 @@ img {
 }
 
 .home__title-color {
-  background: linear-gradient(
-    135deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background-color: var(--title-color);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  
 }
 
 .home__description {
@@ -399,7 +394,11 @@ img {
 }
 
 .home__blob-img {
-  width: 360px;
+    width: 350px; /* ajusta a tu preferencia */
+  height: auto; /* mantiene la proporción */
+  object-fit: cover; /* asegura que la imagen no se deforme, llenando el espacio */
+  border-radius: 50%; 
+
 }
 
 /* Typewriter effect */
@@ -416,16 +415,19 @@ img {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
 }
 
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: var(--first-color);
   }
@@ -433,11 +435,9 @@ img {
 
 /* Enhance button styling */
 .button {
-  background: linear-gradient(
-    135deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
   color: #fff;
   padding: 0.85rem 2.5rem;
   font-weight: var(--font-semi);
@@ -470,11 +470,9 @@ img {
 }
 
 .button-outline:hover {
-  background: linear-gradient(
-    135deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
   color: #fff;
   box-shadow: 0 8px 15px rgba(var(--first-color-rgb), 0.25);
 }
@@ -525,11 +523,13 @@ img {
 .about__subtitle {
   margin-bottom: var(--mb-2);
   font-size: var(--h2-font-size);
-  background: linear-gradient(
-    135deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
@@ -586,14 +586,13 @@ img {
 .about__info-title {
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
-  background: linear-gradient(
-    135deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
 .about__info-name {
@@ -638,11 +637,15 @@ img {
 
 .skills__category-title {
   font-size: var(--h3-font-size);
-  background: linear-gradient(
-    135deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: var(--mb-3);
@@ -660,11 +663,9 @@ img {
   transform: translateX(-50%);
   width: 60px;
   height: 3px;
-  background: linear-gradient(
-    90deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(90deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
   border-radius: 3px;
 }
 
@@ -700,11 +701,9 @@ img {
   justify-content: center;
   width: 45px;
   height: 45px;
-  background: linear-gradient(
-    135deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
   color: #fff;
   border-radius: 12px;
   margin-right: 0.75rem;
@@ -733,11 +732,9 @@ img {
 
 .skills__bar {
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(90deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
   border-radius: 1rem;
   width: 0%;
   transition: width 1s ease-out !important;
@@ -802,11 +799,9 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.8)
-  );
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.8));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -837,11 +832,9 @@ img {
   gap: 0.5rem;
   padding: 0.6rem 1.2rem;
   border-radius: 0.8rem;
-  background: linear-gradient(
-    135deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
   color: #fff;
   font-size: var(--small-font-size);
   transition: all 0.3s ease;
@@ -876,11 +869,9 @@ img {
   left: 0;
   width: 60px;
   height: 3px;
-  background: linear-gradient(
-    90deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(90deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
   border-radius: 3px;
 }
 
@@ -916,11 +907,9 @@ img {
 
 /* Enhance experience section */
 .experience {
-  background: linear-gradient(
-    180deg,
-    rgba(var(--first-color-rgb), 0.05) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(var(--first-color-rgb), 0.05) 0%,
+      rgba(255, 255, 255, 0) 100%);
   padding: 5rem 0;
 }
 
@@ -962,11 +951,9 @@ img {
   top: 0;
   width: 50px;
   height: 50px;
-  background: linear-gradient(
-    135deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1008,11 +995,13 @@ img {
 
 .timeline__company {
   font-size: var(--normal-font-size);
-  background: linear-gradient(
-    135deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 0.5rem;
@@ -1024,11 +1013,9 @@ img {
   color: #fff;
   margin-bottom: var(--mb-3);
   display: inline-block;
-  background: linear-gradient(
-    135deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
   padding: 0.35rem 1rem;
   border-radius: 2rem;
   font-weight: 500;
@@ -1089,11 +1076,13 @@ img {
 
 .certification__icon {
   font-size: 2.2rem;
-  background: linear-gradient(
-    135deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   flex-shrink: 0;
@@ -1161,11 +1150,13 @@ img {
 
 .contact__icon {
   font-size: 1.5rem;
-  background: linear-gradient(
-    135deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-right: 1rem;
@@ -1241,11 +1232,9 @@ img {
 
 /* Enhance footer */
 .footer {
-  background: linear-gradient(
-    135deg,
-    var(--second-color) 0%,
-    hsl(var(--hue-color), 40%, 20%) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--second-color) 0%,
+      hsl(var(--hue-color), 40%, 20%) 100%);
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -1280,11 +1269,9 @@ img {
   left: 0;
   width: 40px;
   height: 3px;
-  background: linear-gradient(
-    90deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(90deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
   border-radius: 3px;
 }
 
@@ -1363,11 +1350,9 @@ img {
 }
 
 .footer__social-icon:hover {
-  background: linear-gradient(
-    135deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
   transform: translateY(-8px) rotate(8deg);
   box-shadow: 0 8px 25px rgba(var(--first-color-rgb), 0.3);
 }
@@ -1401,9 +1386,11 @@ img {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.2);
   }
+
   100% {
     transform: scale(1);
   }
@@ -1414,11 +1401,9 @@ img {
   position: fixed;
   right: 2rem;
   bottom: 2rem;
-  background: linear-gradient(
-    135deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
   color: #fff;
   width: 50px;
   height: 50px;
@@ -1449,6 +1434,7 @@ img {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -1459,6 +1445,7 @@ img {
     transform: translateY(50px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -1470,10 +1457,12 @@ img {
     transform: scale(1);
     box-shadow: 0 0 0 0 rgba(var(--first-color-rgb), 0.4);
   }
+
   70% {
     transform: scale(1.1);
     box-shadow: 0 0 0 10px rgba(var(--first-color-rgb), 0);
   }
+
   100% {
     transform: scale(1);
     box-shadow: 0 0 0 0 rgba(var(--first-color-rgb), 0);
@@ -1484,9 +1473,11 @@ img {
   0% {
     transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     transform: translateY(-15px) rotate(2deg);
   }
+
   100% {
     transform: translateY(0px) rotate(0deg);
   }
@@ -1496,6 +1487,7 @@ img {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -1505,9 +1497,11 @@ img {
   0% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
+
   50% {
     border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
+
   100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
@@ -1638,6 +1632,7 @@ img {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -1647,9 +1642,11 @@ img {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.2);
   }
+
   100% {
     transform: scale(1);
   }
@@ -1670,13 +1667,16 @@ img {
 }
 
 @keyframes blob {
+
   0%,
   100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
+
   50% {
     border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
   }
+
   100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
@@ -1688,10 +1688,12 @@ img {
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-10px);
   }

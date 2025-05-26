@@ -241,7 +241,7 @@ const Portfolio = () => {
     {
       id: 1,
       title: "Happy Kisan App",
-      image: "happy_kisan.png",
+      image: "",
       liveLink: "https://play.google.com/store/apps/details?id=com.happykisan",
       githubLink: "https://github.com/Engglala243/happy_kisan",
       description:
@@ -417,7 +417,7 @@ const Portfolio = () => {
                 scrollToSection("home");
               }}
             >
-              <span className="nav__logo-text">Aditya</span>
+              <span className="nav__logo-text">Emilio Gallo</span>
               <span className="nav__logo-dot"></span>
             </a>
           </div>
@@ -471,7 +471,7 @@ const Portfolio = () => {
             <h1 className="home__title">
               Hi,
               <br />
-              I'm <span className="home__title-color">Aditya Patidar</span>
+              I'm <></><span className="home__title-color">Emilio Gallo</span>
               <br /> <span className="typewriter">Full Stack Developer</span>
             </h1>
             <p
@@ -499,7 +499,7 @@ const Portfolio = () => {
                 data-aos-delay="800"
               >
                 <a
-                  href="https://www.linkedin.com/in/aditya-patidar-9349a3218/"
+                  href="https://www.linkedin.com/in/emilio-gallo-9a547a1ba/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="home__social-icon"
@@ -508,7 +508,7 @@ const Portfolio = () => {
                   <FaLinkedin />
                 </a>
                 <a
-                  href="https://github.com/Engglala243"
+                  href="https://github.com/3m1l1o"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="home__social-icon"
@@ -523,7 +523,7 @@ const Portfolio = () => {
           <div className="home__img">
             <svg
               className="home__blob"
-              viewBox="0 0 479 467"
+              viewBox="0 0 450 450"
               xmlns="http://www.w3.org/2000/svg"
             >
               <mask id="mask0" mask-type="alpha">
@@ -536,9 +536,9 @@ const Portfolio = () => {
                 />
                 <image
                   className="home__blob-img"
-                  x="50"
-                  y="60"
-                  href="/image.png"
+                  x="90"
+                  y="90"
+                  href="./src/assets/images/AresSpanelBretton.jpeg"
                 />
               </g>
             </svg>
@@ -558,7 +558,7 @@ const Portfolio = () => {
               data-aos-delay="200"
             >
               <img
-                src="/image.png"
+                src="./src/assets/images/AresSpanelBretton.jpeg"
                 alt="image.png"
                 className="about__portrait"
               />
@@ -571,16 +571,15 @@ const Portfolio = () => {
             >
               <h2 className="about__subtitle">I'm Aditya Patidar</h2>
               <p className="about__text">
-                I'm a passionate Full-Stack Developer based in Indore, Madhya
-                Pradesh, with expertise in building secure and scalable web and
-                mobile applications.
+                I'm a passionate Developer based in Javascript, React.js
+                with expertise in building secure and scalable web.
               </p>
 
               <p className="about__text">
                 I specialize in creating real-world impact through user-centered
                 design and continuous learning. My technical skills span across
                 frontend and backend technologies, with particular strength in
-                React.js, Node.js, and mobile app development with React Native.
+                React.js, Node.js.
               </p>
 
               <p className="about__text">
@@ -592,7 +591,7 @@ const Portfolio = () => {
 
               <div className="about__info">
                 <div className="about__info-item">
-                  <span className="about__info-title">1+</span>
+                  <span className="about__info-title">3+</span>
                   <span className="about__info-name">
                     Years
                     <br />
@@ -600,7 +599,7 @@ const Portfolio = () => {
                   </span>
                 </div>
                 <div className="about__info-item">
-                  <span className="about__info-title">6+</span>
+                  <span className="about__info-title">3+</span>
                   <span className="about__info-name">
                     Completed
                     <br />
@@ -608,7 +607,7 @@ const Portfolio = () => {
                   </span>
                 </div>
                 <div className="about__info-item">
-                  <span className="about__info-title">4+</span>
+                  <span className="about__info-title">3+</span>
                   <span className="about__info-name">
                     Technologies
                     <br />
@@ -695,9 +694,7 @@ const Portfolio = () => {
           </h2>
 
           <p className="work__intro" data-aos="fade-up">
-            Here are some of the projects I've worked on, showcasing my skills
-            and experience in artificial intelligence, machine learning, deep
-            learning, and data analytics.
+            Here are some of the projects I've worked on, showcasing my skills in website development 
           </p>
 
           <div className="work__container">
@@ -710,7 +707,7 @@ const Portfolio = () => {
               >
                 <div className="work__img-container">
                   <img
-                    src={project.image || "/placeholder.svg"}
+                    src={"./src/assets/images/AresSpanelBretton.jpeg"}
                     alt={project.title}
                     className="work__img"
                   />
@@ -1078,7 +1075,7 @@ const Portfolio = () => {
               <h3 className="footer__subtitle">Social Links</h3>
               <div className="footer__social-icons">
                 <a
-                  href="https://github.com/Engglala243"
+                  href="https://github.com/3m1l1o"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer__social-icon"
@@ -1087,7 +1084,7 @@ const Portfolio = () => {
                   <FaGithub />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/aditya-patidar-9349a3218/"
+                  href="https://www.linkedin.com/in/emilio-gallo-9a547a1ba/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer__social-icon"
@@ -1101,11 +1098,11 @@ const Portfolio = () => {
 
           <div className="footer__bottom">
             <p className="footer__copy">
-              &#169; {new Date().getFullYear()} Aditya Patidar. All rights
+              &#169; {new Date().getFullYear()} Emilio Gallo. All rights
               reserved
             </p>
             <p className="footer__credit">
-              Designed with <span className="heart">❤</span> by Aditya Patidar
+              Designed with <span className="heart">❤</span> by Emilio Gallo
             </p>
           </div>
         </div>

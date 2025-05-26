@@ -19,7 +19,7 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const isActive = (path) => {
+  const isActive = () => {
     if (path.includes("#")) {
       return location.hash === path.split("#")[1];
     }
