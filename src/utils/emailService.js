@@ -18,7 +18,7 @@ export const sendEmail = async (formData) => {
       from_name: formData.name,
       from_email: formData.email,
       message: formData.message,
-      to_name: "Aditya", // Your name
+      to_name: "Emilio", // Your name
     };
 
     const response = await emailjs.default.send(

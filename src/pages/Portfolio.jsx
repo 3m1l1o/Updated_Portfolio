@@ -109,7 +109,7 @@ const Portfolio = () => {
         await import("aos/dist/aos.css");
 
         AOS.init({
-          duration: 800,
+          duration:800,
           once: false,
           mirror: true,
           offset: 80,
@@ -138,11 +138,10 @@ const Portfolio = () => {
   // Handle resume download
   const handleDownloadResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1IiS_s1rrOXERz25Rx1M65Mr-b802BBEp/view?usp=sharing",
+      "https://docs.google.com/document/d/1sxuq89FW2l49zJA8KrLEanC1gwqtGmM7HVa1ZURTDFo/edit?tab=t.0",
       "_blank"
     );
   };
-
   // Handle form input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -865,7 +864,7 @@ const Portfolio = () => {
                 <div>
                   <h3 className="contact__info-title">Email</h3>
                   <span className="contact__info-data">
-                    adityapatidar243@gmail.com
+                    emiliogallo80@gmail.com
                   </span>
                 </div>
               </div>
@@ -874,7 +873,7 @@ const Portfolio = () => {
                 <i className="bx bx-phone contact__icon"></i>
                 <div>
                   <h3 className="contact__info-title">Phone</h3>
-                  <span className="contact__info-data">+91 7828982951</span>
+                  <span className="contact__info-data">11 2874 8549</span>
                 </div>
               </div>
 
@@ -883,7 +882,7 @@ const Portfolio = () => {
                 <div>
                   <h3 className="contact__info-title">Location</h3>
                   <span className="contact__info-data">
-                    Indore, Madhya Pradesh, India
+                    Buenos Aires, Argentina
                   </span>
                 </div>
               </div>
@@ -990,10 +989,10 @@ const Portfolio = () => {
         <div className="footer__container">
           <div className="footer__content">
             <div className="footer__info">
-              <h2 className="footer__title">Aditya Patidar</h2>
+              <h2 className="footer__title">Emilio Gallo</h2>
               <p className="footer__description">
-                Full-Stack Developer specializing in creating secure, scalable
-                web and mobile applications.
+                Developer specializing in creating secure, scalable
+                web applications.
               </p>
             </div>
 
@@ -1061,13 +1060,13 @@ const Portfolio = () => {
             <div className="footer__contact">
               <h3 className="footer__subtitle">Contact Info</h3>
               <p>
-                <i className="bx bx-envelope"></i> adityapatidar.tech@gmail.com
+                <i className="bx bx-envelope"></i> emiliogallo80@gmail.com
               </p>
               <p>
-                <i className="bx bx-phone"></i> +91 7828982951
+                <i className="bx bx-phone"></i> 11 2874 8549
               </p>
               <p>
-                <i className="bx bx-map"></i> Indore, Madhya Pradesh, India
+                <i className="bx bx-map"></i> Buenos Aires, Argentina
               </p>
             </div>
 
