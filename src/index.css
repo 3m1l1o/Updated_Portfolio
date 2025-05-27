@@ -394,10 +394,10 @@ img {
 }
 
 .home__blob-img {
-    width: 350px; /* ajusta a tu preferencia */
+    width: 100px; /* ajusta a tu preferencia */
   height: auto; /* mantiene la proporción */
   object-fit: cover; /* asegura que la imagen no se deforme, llenando el espacio */
-  border-radius: 50%; 
+  border-radius: 500%; 
 
 }
 
