@@ -389,12 +389,12 @@ img {
 
 .home__blob {
   fill: var(--first-color);
-  width: 100%;
+  width: 260%;
   height: auto;
 }
 
 .home__blob-img {
-    width: 100px; /* ajusta a tu preferencia */
+  width: 133px; /* ajusta a tu preferencia */
   height: auto; /* mantiene la proporción */
   object-fit: cover; /* asegura que la imagen no se deforme, llenando el espacio */
   border-radius: 500%; 
