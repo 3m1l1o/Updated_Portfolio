@@ -239,30 +239,29 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "Happy Kisan App",
+      title: "Gif Expert App",
       image: "",
-      liveLink: "https://play.google.com/store/apps/details?id=com.happykisan",
-      githubLink: "https://github.com/Engglala243/happy_kisan",
+      //liveLink: "https://play.google.com/store/apps/details?id=com.happykisan",
+      githubLink: "https://github.com/3m1l1o/gifExpertApp",
       description:
-        "Enhanced the Happy Kisan app with improved logout session management, flat scroll integration, real-time updates, and cross-component data sync.",
-      technologies: ["React Native", "Redux", "Firebase", "Push Notifications"],
+        "I developed a GIF application using React, integrating it with an API similar to WhatsApp to fetch multimedia content. I implemented custom styles with CSS and used Bootstrap to enhance the interface and user experience, resulting in an interactive and visually appealing platform.",
+      technologies: ["React.js", "Css", "Bootstrap"],
     },
     {
       id: 2,
-      title: "Email Booster App",
+      title: "React Native App",
       image: "./email.jpeg",
       // liveLink: "https://github.com/Engglala243/News_app",
-      githubLink: "https://github.com/oreximus/pradeep-sir-email-project",
+      githubLink: "https://github.com/3m1l1o/react-native-app",
       description:
-        "Automate your email verification process with real-time monitoring. The app continuously checks for valid emails, preventing unverified or spam emails from cluttering your main inbox. The cycle runs automatically until verification is complete, optimizing your inbox efficiency.",
-      technologies: ["Next", "Email API", "Tailwind"],
+        "I developed a basic mobile application using React Native, based on Stephen Grider's course. The app incorporates fundamental React Native concepts such as components, state, and navigation, enhancing my skills in cross-platform development and best practices in mobile programming.",
+      technologies: ["React Native", "Expo", "css"],
     },
     {
       id: 3,
       title: "DaaSu - SaaS ERP Application",
       image: "./daasu.jpeg",
-      liveLink:
-        "https://play.google.com/store/apps/details?id=com.oreximus.daasu",
+      //liveLink:"https://play.google.com/store/apps/details?id=com.oreximus.daasu",
       githubLink:
         "https://github.com/adarsh24688/daasu_app/tree/feature/react-native-bare",
       description:
@@ -313,46 +312,42 @@ const Portfolio = () => {
     {
       name: "Programming Languages",
       skills: [
-        { name: "JavaScript", icon: <FaJs />, level: 90 },
-        { name: "C/C++", icon: <FaCode />, level: 85 },
-        { name: "Python", icon: <FaCode />, level: 80 },
+        { name: "JavaScript", icon: <FaJs />, level: 60 },
       ],
     },
     {
       name: "Frontend Development",
       skills: [
-        { name: "React.js", icon: <FaReact />, level: 95 },
+        { name: "React.js", icon: <FaReact />, level: 65 },
         { name: "HTML5/CSS3", icon: <FaHtml5 />, level: 90 },
         { name: "Tailwind CSS", icon: <SiTailwindcss />, level: 85 },
-        { name: "Next.js", icon: <SiNextdotjs />, level: 80 },
-      ],
+       ],
     },
     {
       name: "Backend Development",
       skills: [
-        { name: "Node.js", icon: <FaNodeJs />, level: 90 },
-        { name: "Express.js", icon: <SiExpress />, level: 85 },
-        { name: "Nest.js", icon: <SiNestjs />, level: 75 },
-        { name: "MySQL", icon: <SiMysql />, level: 80 },
+        { name: "Node.js", icon: <FaNodeJs />, level: 50 },
+        { name: "Express.js", icon: <SiExpress />, level: 50 },
+       
       ],
     },
     {
       name: "Mobile Development",
       skills: [
-        { name: "React Native", icon: <FaMobile />, level: 85 },
-        { name: "Expo", icon: <FaMobile />, level: 80 },
-        { name: "Android Basics", icon: <FaMobile />, level: 70 },
+        { name: "React Native", icon: <FaMobile />, level: 45 },
+        { name: "Expo", icon: <FaMobile />, level: 45 },
+        { name: "Android Basics", icon: <FaMobile />, level: 40 },
       ],
     },
-    {
-      name: "Testing & Tools",
-      skills: [
-        { name: "Jest", icon: <SiJest />, level: 75 },
-        { name: "NMAP", icon: <FaServer />, level: 70 },
-        { name: "Burp Suite", icon: <FaServer />, level: 65 },
-        { name: "SQLmap", icon: <FaDatabase />, level: 70 },
-      ],
-    },
+   //{
+   //   name: "Testing & Tools",
+   // skills: [
+   //     { name: "Jest", icon: <SiJest />, level: 75 },
+   //     { name: "NMAP", icon: <FaServer />, level: 70 },
+   //     { name: "Burp Suite", icon: <FaServer />, level: 65 },
+   //     { name: "SQLmap", icon: <FaDatabase />, level: 70 },
+   //   ],
+   // },
   ];
 
   // Education data from resume

@@ -23,7 +23,7 @@
   --container-color: #fff;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-  --first-color-rgb: 65, 105, 225;
+  --first-color-rgb: 65, 105, 125;
 
   /*===== Font and typography =====*/
   --body-font: "Poppins", sans-serif;
@@ -317,11 +317,11 @@ img {
 .home {
   position: relative;
   row-gap: 5rem;
-  padding: 6rem 0 0;
+  padding: 6rem 3rem 0;
   overflow: hidden;
   background: linear-gradient(180deg,
       rgba(var(--first-color-rgb), 0.05) 0%,
-      rgba(189, 40, 40, 0) 100%);
+      rgba(27, 26, 26, 0) 100%);
 }
 
 .home__data {
@@ -382,7 +382,7 @@ img {
 
 .home__img {
   position: absolute;
-  right: 15px;
+  right: 20px;
   top: 60px;
   width: 260px;
 }
@@ -398,6 +398,7 @@ img {
   height: auto; /* mantiene la proporción */
   object-fit: cover; /* asegura que la imagen no se deforme, llenando el espacio */
   border-radius: 500%; 
+  padding-left: 0;
 
 }
 
